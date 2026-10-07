@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pedido | El Caldero Chorreante</title>
+    <meta
+      name="description"
+      content="Armá tu pedido en El Caldero Chorreante: elegí de la carta, ajustá cantidades y confirmá para tomar en el local o para llevar."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cinzel:wght@500;600&family=Source+Sans+3:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.min.css"
+    />
+    <link rel="stylesheet" href="styles/estilos.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/sweetalert2@11.22.2/dist/sweetalert2.all.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.min.js"
+    ></script>
+    <script defer src="js/pedido.js"></script>
+    <script defer src="js/carta.js"></script>
+  </head>
+  <body>
+    <header class="cabecera">
+      <div class="contenedor cabecera__interior">
+        <a class="marca" href="#inicio">El Caldero Chorreante</a>
+        <nav class="nav" aria-label="Secciones del pedido">
+          <a href="#carta">Carta</a>
+          <a class="nav__pedido" href="#pedido">
+            Pedido <span id="contador-pedido">0</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio" aria-labelledby="titulo-principal">
+        <div class="contenedor hero__contenido">
+          <h1 id="titulo-principal">El Caldero Chorreante</h1>
+          <p>
+            Café, libros y magia en Buenos Aires. Elegí de la carta, armá tu
+            pedido y confirmalo para tomar en el local o llevarlo.
+          </p>
+          <div class="hero__acciones">
+            <a class="boton boton--cobre" href="#carta">Ver la carta</a>
+            <a class="boton boton--oro" href="#pedido">Ir al pedido</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="seccion" aria-labelledby="titulo-simulador">
+        <div class="contenedor">
+          <h2 id="titulo-simulador" class="seccion__titulo">Hacé tu pedido</h2>
+          <p class="seccion__texto">
+            El pedido queda guardado en este navegador. Podés cambiar
+            cantidades, quitar productos o vaciarlo antes de confirmar.
+          </p>
+
+          <div class="simulador">
+            <section id="carta" aria-labelledby="titulo-carta">
+              <h2 id="titulo-carta" class="bloque__titulo">Carta</h2>
+              <label class="campo" for="busqueda-carta">
+                Buscar en la carta
+                <input
+                  id="busqueda-carta"
+                  type="search"
+                  placeholder="Chocolate, tarta, caldo..."
+                  autocomplete="off"
+                />
+              </label>
+              <div
+                id="filtros-carta"
+                class="filtros"
+                role="group"
+                aria-label="Filtrar por categoría"
+              ></div>
+              <p id="aviso-carga" class="aviso-carga">Cargando la carta...</p>
+              <p id="aviso-error" class="aviso-error" role="alert" hidden></p>
+              <div id="grilla-carta" class="grilla-carta"></div>
+            </section>
+
+            <aside class="panel-pedido" id="pedido" aria-labelledby="titulo-pedido">
+              <h2 id="titulo-pedido" class="bloque__titulo">Tu pedido</h2>
+              <p id="pedido-vacio" class="pedido-vacio">
+                Todavía no agregaste nada. Elegí un producto de la carta.
+              </p>
+              <ul id="lista-pedido" class="lista-pedido"></ul>
+              <p class="total-pedido">
+                Total <strong id="total-pedido">$0</strong>
+              </p>
+              <form id="formulario-pedido" class="formulario-pedido">
+                <label class="campo" for="nombre-pedido">
+                  Nombre del pedido
+                  <input id="nombre-pedido" name="nombre" type="text" maxlength="40" />
+                </label>
+                <label class="campo" for="modalidad-pedido">
+                  Modalidad
+                  <select id="modalidad-pedido" name="modalidad">
+                    <option value="En el local">En el local</option>
+                    <option value="Para llevar">Para llevar</option>
+                  </select>
+                </label>
+                <button type="submit" class="boton boton--cobre" id="boton-confirmar">
+                  Confirmar pedido
+                </button>
+                <button type="button" class="boton boton--ghost" id="boton-vaciar">
+                  Vaciar pedido
+                </button>
+              </form>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="pie">
+      <p class="pie__marca">El Caldero Chorreante</p>
+      <p class="pie__copia">
+        Proyecto ficticio · Agustín Farber · Entrega final de JavaScript, Coderhouse.
+      </p>
+    </footer>
+  </body>
+</html>

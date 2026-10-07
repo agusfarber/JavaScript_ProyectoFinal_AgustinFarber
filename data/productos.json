@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "nombre": "Chocolate Negro Absoluto",
+    "descripcion": "Cacao 70%, crema y chili. Ideal para noches de lluvia.",
+    "precio": 4800,
+    "categoria": "Pociones",
+    "imagen": "assets/images/bebida-chocolate.jpg",
+    "textoAlternativo": "Chocolate caliente servido en taza de cerámica oscura"
+  },
+  {
+    "id": 2,
+    "nombre": "Espuma de Patronus",
+    "descripcion": "Flat white con leche de avena y vainilla de Madagascar.",
+    "precio": 3600,
+    "categoria": "Pociones",
+    "imagen": "assets/images/bebida-latte.jpg",
+    "textoAlternativo": "Latte con arte en espuma sobre mesa de madera"
+  },
+  {
+    "id": 3,
+    "nombre": "Infusión Mandrágora",
+    "descripcion": "Menta, jengibre y limón. Despierta hasta al fantasma más dormilón.",
+    "precio": 3200,
+    "categoria": "Pociones",
+    "imagen": "assets/images/bebida-te.jpg",
+    "textoAlternativo": "Tetera con té herbal y hierbas frescas"
+  },
+  {
+    "id": 4,
+    "nombre": "Tarta de la Abuela Weasley",
+    "descripcion": "Manzana, masa quebrada y un toque de mascabo.",
+    "precio": 3900,
+    "categoria": "Hechizos dulces",
+    "imagen": "assets/images/pastel-tarta.jpg",
+    "textoAlternativo": "Tarta de manzana casera con canela"
+  },
+  {
+    "id": 5,
+    "nombre": "Brownies de la Mazmorra",
+    "descripcion": "Chocolate intenso, nueces y sal marina.",
+    "precio": 3400,
+    "categoria": "Hechizos dulces",
+    "imagen": "assets/images/pastel-brownies.jpg",
+    "textoAlternativo": "Brownies de chocolate cortados en cuadrados"
+  },
+  {
+    "id": 6,
+    "nombre": "Scones de Hogsmeade",
+    "descripcion": "Con mermelada de frutos rojos y crema batida.",
+    "precio": 3100,
+    "categoria": "Hechizos dulces",
+    "imagen": "assets/images/pastel-scones.jpg",
+    "textoAlternativo": "Scones recién horneados con mermelada"
+  },
+  {
+    "id": 7,
+    "nombre": "Sándwich del Expreso",
+    "descripcion": "Pan de masa madre, jamón cocido, queso cheddar y mostaza miel.",
+    "precio": 5500,
+    "categoria": "Platos del día",
+    "imagen": "assets/images/plato-sandwich.jpg",
+    "textoAlternativo": "Sándwich gourmet con pan rústico y vegetales"
+  },
+  {
+    "id": 8,
+    "nombre": "Caldo del Caldero",
+    "descripcion": "Crema de calabaza asada, semillas tostadas y pan de la casa.",
+    "precio": 4900,
+    "categoria": "Platos del día",
+    "imagen": "assets/images/plato-sopa.jpg",
+    "textoAlternativo": "Bowl de sopa cremosa con pan tostado"
+  },
+  {
+    "id": 9,
+    "nombre": "Ensalada del Invernadero",
+    "descripcion": "Greens de estación, pera, nueces y vinagreta de miel.",
+    "precio": 5200,
+    "categoria": "Platos del día",
+    "imagen": "assets/images/plato-ensalada.jpg",
+    "textoAlternativo": "Ensalada fresca con greens, frutos secos y queso"
+  }
+]
