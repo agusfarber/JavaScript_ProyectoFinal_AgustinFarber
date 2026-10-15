@@ -4,6 +4,12 @@ Simulador de pedido para el café-librería ficticio El Caldero Chorreante. Entr
 
 El circuito es: ver la carta, elegir productos, modificar cantidades, calcular el total y confirmar el pedido.
 
+## Capturas
+
+![Inicio del simulador de pedido](docs/inicio.png)
+
+![Carta con dos productos agregados al pedido](docs/pedido.png)
+
 ## Cómo abrirlo
 
 La carta se lee desde `data/productos.json` con `fetch`. Eso no funciona si abrís `index.html` con doble clic. Hay que servir la carpeta con un servidor local.
